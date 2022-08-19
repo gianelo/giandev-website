@@ -3,9 +3,21 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="giandev">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<!--
+			.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+		 -->
+		<h1>Programar es mi <span class="font-black bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent bg-auto animate-pulse">Pasión</span></h1>
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -50,7 +62,7 @@ import Card from '../components/Card.astro';
 		max-width: 60ch;
 	}
 
-	.text-gradient {
+	/* .text-gradient {
 		font-weight: 900;
 		background-image: var(--astro-gradient);
 		-webkit-background-clip: text;
@@ -59,7 +71,7 @@ import Card from '../components/Card.astro';
 		background-position-y: 100%;
 		border-radius: 0.4rem;
 		animation: pulse 4s ease-in-out infinite;
-	}
+	} */
 
 	@keyframes pulse {
 		0%,

@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "giandev-website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,10 +10,11 @@
     "astro": "astro"
   },
   "devDependencies": {
+    "@astrojs/tailwind": "^1.0.0",
     "astro": "1.0.6",
     "standard": "17.0.0"
   },
   "eslintConfig": {
-    "extends" : "standard"
+    "extends": "standard"
   }
 }
