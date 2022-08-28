@@ -1,0 +1,57 @@
+---
+const { menuItems, imageLogo, headerTitle} = Astro.props
+---
+
+<style>
+
+    header {
+        display: flex;
+        text-align: center;
+        padding: 1.5rem;
+        align-items: center;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 40;
+        display: none;
+        min-height: 100vh;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-color: #fff;
+
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 600;
+        letter-spacing: -0.025rem;
+        column-gap: 2rem;
+    }
+
+
+    @media (min-width: 1024px) {
+        header {
+            justify-content: center;
+        }  
+         ul{
+             flex-direction: row;
+         }
+    }
+</style>
+
+<header>
+    <nav class='peer-checked:block lg:block lg:static lg:bg-inherit lg:py-0 lg:min-h-0 bg-opacity-40 backdrop-blur-lg lg:backdrop-blur-0'>
+        <ul class='text-slate-700 [&>li>a]:border-b-2 [&>li>a]:border-b-transparent [&>li>a]:transition-all gap-y-4'
+            > 
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tecnologias</a></li>
+            <li><a href="#">Proyectos</a></li>
+        </ul>
+    </nav>
+</header>
